@@ -7,9 +7,8 @@ services:
     applications:
         image: tianon/true
         volumes:
-            - ../:/var/www
-#            - ../sample/:/var/www/sample
-
+            - ../ceviu/ceviu-api/:/var/www/ceviu-api
+            - ../ceviu/ceviu-web/:/var/www/ceviu-web
 ### Workspace Utilities Container ###########################
 
     workspace:
