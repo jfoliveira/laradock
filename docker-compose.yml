@@ -9,6 +9,7 @@ services:
         volumes:
             - ../ceviu/ceviu-api/:/var/www/ceviu-api
             - ../ceviu/ceviu-web/:/var/www/ceviu-web
+            - ../clube/cscs-plataforma/:/var/www/cscs-plataforma
 ### Workspace Utilities Container ###########################
 
     workspace:
