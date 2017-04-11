@@ -120,13 +120,13 @@ services:
     mysql:
         build: 
             context: ./mysql
-            args:
-                - MYSQL_DATABASE=homestead
-                - MYSQL_USER=homestead
-                - MYSQL_PASSWORD=secret
-                - MYSQL_ROOT_PASSWORD=root
+        environment:
+            - MYSQL_DATABASE=homestead
+            - MYSQL_USER=homestead
+            - MYSQL_PASSWORD=secret
+            - MYSQL_ROOT_PASSWORD=root
         volumes:
-            - mysql:/var/lib/mysql
+           - ../clube/dados:/var/lib/mysql
         ports:
             - "3306:3306"
 
